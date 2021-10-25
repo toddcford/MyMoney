@@ -46,20 +46,20 @@ export default function LogIn() {
       <h1 className={styles.title}> My Money </h1>           
       <form action="/Home" method='POST' onSubmit={()=> getBalancesData()}className={styles.registration_form}>
         <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">Email address</label>
+            <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
             <input type="email" className="form-control" value='demo' id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+          <div id="emailHelp" className="form-text">We`&apos;`'ll never share your email with anyone else.</div>
           </div> 
         
         <div className="mb-3">
-          <label for="exampleInputPassword1" className="form-label">Password</label>
+          <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
           <input type="password" className="form-control" id="exampleInputPassword1" />
         </div>
         {/* <button type='submit'></button> */}
           {linkToken != null ? <Link linkToken={linkToken} /> : <h1> Loading... </h1>}
           
           <p><br /><strong> To demo the app: <br />
-                       press 'link account', choose a bank, <br /> and enter user_good and pass_good <br /> as username and password</strong></p>
+                       press `&apos;`link account`&apos;`, choose a bank, <br /> and enter user_good and pass_good <br /> as username and password</strong></p>
       </form>     
   
     
