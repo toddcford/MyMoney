@@ -1,0 +1,9 @@
+.title {
+  color: hotpink;
+}
+
+.pie_chart {
+  display: grid;
+  justify-content: center;
+  margin-top: 5%;
+}

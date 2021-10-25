@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  margin: 50px 0 20px 0;
+  color: #8884d8;
+  
+}
+
+.investments_container {
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+.bar_chart {
+  margin-left: 5%;
+}

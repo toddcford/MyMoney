@@ -1,0 +1,56 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr min(85ch, 100%) 1fr;
+  margin: 5% 0 0 0;
+  
+}
+
+.nav > * {
+  grid-column: 2;
+}
+
+.sub_container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.transaction_element {
+  margin: 10px 0 15px 0;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.transaction_element:hover {
+  background-color: #F8F8F8;
+}
+.name_and_amount {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+}
+
+.category {
+  text-align: right;
+}
+
+.name {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: -15px;
+}
+.tx_type {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.date {
+  text-align: right;
+  margin-bottom:0;
+}
+.tx_list {
+  color: black;
+  height: 500px;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 10px 25px 0 25px;
+}
+

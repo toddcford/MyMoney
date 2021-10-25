@@ -1,0 +1,13 @@
+         {/* {accounts.length !== 0 ? 
+            <ul className={styles.accounts_list}>
+              {accounts.map((account, accountIdx) => {
+                // return <li key={accountIdx}><button className={styles.account_item}onClick={(e)=>sortClick(e)}> {account.name} </button></li>
+                return <li key={accountIdx} className={styles.account_item} onClick={(e)=>sortClick(e)}> {account.name} </li>
+              })}
+            </ul> */}
+
+                  <ul>
+        {securities.map((investment, investmentIdx) => {
+          return <li key={investmentIdx}> {investment.name} </li>
+        })}
+      </ul>
