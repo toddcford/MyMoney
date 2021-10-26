@@ -13,13 +13,6 @@ export default function LogIn() {
   const [balancesData, setBalancesData] = useState(null);
   const [investmentData, setInvestmentData] = useState(null);
   
-
-  // const getBalancesData = async() => {
-  //   const response = await fetch('/api/balances');
-  //   const data = await response.json();
-  //   setBalancesData(data);
-  //   console.log(data);
-  // }
   
   const getAccountData = async () => {
     const response = await fetch('/api/investments');
@@ -48,7 +41,7 @@ export default function LogIn() {
         <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
             <input type="email" className="form-control" value='demo' id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <div id="emailHelp" className="form-text">We`&apos;`ll never share your email with anyone else.</div>
+          <div id="emailHelp" className="form-text">We &apos;ll never share your email with anyone else.</div>
           </div> 
         
         <div className="mb-3">
@@ -56,10 +49,7 @@ export default function LogIn() {
           <input type="password" className="form-control" id="exampleInputPassword1" />
         </div>
         {/* <button type='submit'></button> */}
-          {linkToken != null ? <Link linkToken={linkToken} /> : <h1> Loading... </h1>}
-          
-          <p><br /><strong> To demo the app: <br />
-                       press `&apos;`link account`&apos;`, choose a bank, <br /> and enter user_good and pass_good <br /> as username and password</strong></p>
+          {linkToken != null ? <Link linkToken={linkToken} /> : <h1> Loading... </h1>}                
       </form>     
   
     
