@@ -48,7 +48,7 @@ export default function LogIn() {
         <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
             <input type="email" className="form-control" value='demo' id="exampleInputEmail1" aria-describedby="emailHelp" />
-          <div id="emailHelp" className="form-text">We`&apos;`'ll never share your email with anyone else.</div>
+          <div id="emailHelp" className="form-text">We`&apos;`ll never share your email with anyone else.</div>
           </div> 
         
         <div className="mb-3">

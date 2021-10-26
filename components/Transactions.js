@@ -68,9 +68,9 @@ export default function Transactions(props) {
     <div className={styles.nav}> 
       <div className={styles.sub_container}>
         <h3>Filter by: </h3>
-        <button type="button" className={styles.button} onClick={()=> sortDate()} className="btn btn-success mr-2">Date</button>        
-        <button type="button" className={styles.button} onClick={()=> sortValue()}className="btn btn-success mr-2">Amount</button>
-        <button type="button" className={styles.button} onClick={()=> handleChartClick()}className="btn btn-success mr-2"> Category Breakdown</button>
+        <button type="button" className={styles.button} onClick={()=> sortDate()} className="btn btn-success">Date</button>        
+        <button type="button" className={styles.button} onClick={()=> sortValue()}className="btn btn-success">Amount</button>
+        <button type="button" className={styles.button} onClick={()=> handleChartClick()}className="btn btn-success"> Category Breakdown</button>
       </div>
       {showPieChart ? 
       <section className={styles.data}>
